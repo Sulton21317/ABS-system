@@ -1,54 +1,46 @@
 # AI-Assisted SmartBrake: Automatic Braking System using YOLOv5 and OpenCV
 
- AI-Assisted SmartBrake is an innovative Automatic Braking System that harnesses the power 
-of YOLOv5 and OpenCV to provide advanced object detection and collision avoidance capabilities.
-This cutting-edge system is designed specially for robots and even enhance road safety and
-prevent accidents by detecting potential obstacles, pedestrians, and vehicles in real-time.
+AI-Assisted SmartBrake innovatsion ABS boʻlib, obʼyektlarni ilgʻor aniqlash va
+toʻqnashuvning oldini olish imkoniyatlarini taʼminlash uchun YOLOv5 va 
+OpenCV quvvatidan foydalanadi. Ushbu zamonaviy tizim robotlar uchun maxsus ishlab chiqilgan va 
+hatto real vaqt rejimida yuzaga kelishi mumkin bo'lgan to'siqlar, piyodalar va transport 
+vositalarini aniqlash orqali yo'l harakati xavfsizligini oshiradi va baxtsiz hodisalarning oldini oladi.
 
 <img src="result.gif" width="1000"/> 
 
-### Features:
-
-YOLOv5 Object Detection: Utilizes the state-of-the-art YOLOv5 model for robust and accurate object detection.
-Real-Time Collision Avoidance: Instantly activates the vehicle's braking system upon detecting potential collisions.
-High-Performance OpenCV: Leverages the power of OpenCV for efficient image processing and analysis.
-Customizable Thresholds: Offers adjustable sensitivity levels for personalized safety preferences.
-Seamless Integration: Easily integrated into autonomous vehicles and robotic applications.
-
-### How It Works:
-
-- YOLOv5 Model: The system employs YOLOv5, a deep learning-based object detection model, to identify objects in the vehicle's path.
-- Real-Time Detection: Using live video feed from cameras, the system performs real-time object detection for timely decision-making.
-- Collision Avoidance: Upon identifying potential obstacles, SmartBrake automatically engages the brakes to prevent collisions.
-- Customizable Safety: Users can fine-tune the system's sensitivity to suit different driving conditions.
+<br/>
+**YOLOv5 ob'ektni aniqlash:** ob'ektni mustahkam va aniq aniqlash uchun eng zamonaviy YOLOv5 modelidan foydalanadi. Haqiqiy vaqtda to'qnashuvning oldini olish: potentsial to'qnashuvlar aniqlanganda avtomobilning tormoz tizimini darhol faollashtiradi. 
+<br/>
+**Yuqori unumdor OpenCV (High-Performance OpenCV):** tasvirni samarali qayta ishlash va tahlil qilish uchun OpenCVdan foydalanadi. Moslashtirilgan chegaralar: Shaxsiylashtirilgan xavfsizlik imtiyozlari uchun sozlanishi sezgirlik darajalarini taklif qiladi. Uzluksiz integratsiya: avtonom transport vositalari va robot ilovalariga osongina birlashtiriladi.
 
 
-### Prerequisites
+### Bu qanday ishlaydi?
+- YOLOv5 modeli: Tizim avtomobil yoʻlidagi obyektlarni aniqlash uchun chuqur oʻrganishga asoslangan obʼyektlarni aniqlash modeli boʻlgan YOLOv5dan foydalanadi.
+-	Haqiqiy vaqtda aniqlash: Kameralardan jonli video tasmasidan foydalanib, tizim o'z vaqtida qaror qabul qilish uchun real vaqtda ob'ektni aniqlashni amalga oshiradi.
+-	To'qnashuvning oldini olish: mumkin bo'lgan to'siqlarni aniqlagandan so'ng, SmartBrake to'qnashuvlarning oldini olish uchun avtomatik ravishda tormozlarni ishga tushiradi.
+-	Sozlanishi mumkin bo'lgan xavfsizlik: Foydalanuvchilar turli xil haydash sharoitlariga mos ravishda tizimning sezgirligini sozlashi mumkin
+
+### Kerak bo’ladigan texnologiya va kutubxonalar.
 
 - Python 3.x
 - OpenCV
 - PyTorch
 - NumPy
+- 
 
-### Installation
 
-1. Clone this repository.
-2. Install the required dependencies
+### O'rnatish jarayoni:
+
+1. Repositoriyani yuklab olish.
+2. Kerakli kutubxonalar o'rnatish
 
 ```bash
 pip3 install torch opencv numpy
 ```
 
-### Usage
-
-1. Download pre-trained YOLOv5 weights or train your own model.
-2. Provide the path to the YOLOv5 weights in the code.
-3. Run the script with the video file.
-4. View the results.
 
 
-
-### Run
+### Terminaldan ishga tushurish
 
 ```bash
 python3 yoloV5_abs.py
